@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Matchmaker for the Web</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h1>❤ Matchmaker ❤</h1>
+    <p>Rate each statement from 1 (strongly disagree) to 5 (strongly agree).</p>
+
+    <label>1. I enjoy outdoor activities.</label>
+    <input type="number" id="q1" min="1" max="5">
+
+    <label>2. I like trying new foods.</label>
+    <input type="number" id="q2" min="1" max="5">
+
+    <label>3. I prefer staying home over going out.</label>
+    <input type="number" id="q3" min="1" max="5">
+
+    <label>4. I enjoy working in teams.</label>
+    <input type="number" id="q4" min="1" max="5">
+
+    <label>5. I like watching movies.</label>
+    <input type="number" id="q5" min="1" max="5">
+
+    <button onclick="calculateMatch()">Check Compatibility</button>
+
+    <div id="output" class="result"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
